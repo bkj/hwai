@@ -6,7 +6,7 @@
 # Helpers
 
 # Can change parameters according to cluster/dataset size
-SPARK_SUBMIT="spark-submit --num-executors 200 --executor-memory 2g  --driver-memory 2g"
+SPARK_SUBMIT="spark-submit --num-executors 64 --executor-memory 2g  --driver-memory 2g"
 
 # --
 # Configuration
@@ -40,4 +40,4 @@ $SPARK_SUBMIT ./predict.py config.json
 #
 # Merge predictions back w/ actual user locations, create plot showing distribution of error
 
-# $SPARK_SUBMIT ./ inspect-results.py config.json
+# $SPARK_SUBMIT inspect-results.py config.json

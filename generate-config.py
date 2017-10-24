@@ -20,6 +20,7 @@ def parse_args():
     parser.add_argument('--non-reciprocal-edges', action="store_true")
     parser.add_argument('--min-n-messages', type=int, default=3)
     parser.add_argument('--num-iter', type=int, default=1)
+    parser.add_argument('--coalesce', type=int, default=64)
     
     return parser.parse_args()
 
@@ -42,6 +43,7 @@ if __name__ == "__main__":
             ("max_median_abs_deviation", args.max_median_abs_deviation),
             ("min_n_messages", args.min_n_messages),
             ("num_iter", args.num_iter),
+            ("coalesce", 64)
         ]))
     ])
     
