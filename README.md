@@ -14,6 +14,10 @@ __TLDR__: Users w/ geolocation are predicted to live at the "average location" o
 
 See `./run.sh`
 
+#### Results
+
+![Error CDF](results.png)
+
 #### Notes
 
 The "spatial median" of a set is the point that minimizes distance to all other points.  In other places, it's implemented as the _member of the set_ that minimizes distance to all other points.  In practice I don't think it matters, though the latter is significantly faster to implement.  The former doesn't have a closed form, so we have to use an iterative method.
