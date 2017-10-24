@@ -4,7 +4,7 @@
 
 Geolocation over social networks
 
-Implementation "spatial label propagation", per:
+Implementation of "spatial label propagation", per:
 
     http://cs.stanford.edu/~jurgens/docs/compton-jurgens-allen_bigdata-2014.pdf
 
