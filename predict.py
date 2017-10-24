@@ -109,5 +109,5 @@ if __name__ == "__main__":
             user_predictions = user_predictions.coalesce(config['params']['coalesce'])
     
     # Save to disk
-    user_predictions.map(format_user_location).saveAsTextFile(config['predictions'] + '-2')
+    user_predictions.map(format_user_location).saveAsTextFile(config['predictions'])
 
