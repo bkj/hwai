@@ -74,4 +74,5 @@ if __name__ == "__main__":
     _ = plt.grid()
     _ = plt.savefig('results.png')
     
-    print("median_error=%f km" % np.median(errs))
+    print("median error -> %f km" % np.median(errs))
+    print("mean error -> %f km" % np.mean(errs))
