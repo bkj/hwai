@@ -16,6 +16,8 @@ See `./run.sh`
 
 #### Results
 
+On development dataset, CDF of errors is show below (median err: 5km, mean err: 120km)
+
 ![Error CDF](results.png)
 
 #### Notes
