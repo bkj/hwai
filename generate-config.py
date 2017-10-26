@@ -13,7 +13,8 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--app-name', type=str, default='wai:%s' % os.environ['HOME'].split('/')[-1])
     
-    parser.add_argument('--inpath', type=str, required=True)
+    parser.add_argument('--inpath', type=str, required=False)
+    parser.add_argument('--graphpath', type=str, required=True)
     parser.add_argument('--outpath', type=str, required=True)
     
     parser.add_argument('--max-median-abs-deviation', type=float, default=30)
@@ -31,11 +32,11 @@ if __name__ == "__main__":
     config = OrderedDict([
         ("app_name",       args.app_name),
         
-        ("inpath",         args.inpath),
+        ("inpath",         args.inpath if args.inpath else ""),
         
-        ("graph",             os.path.join(args.outpath, "graph")),
-        ("message_locations", os.path.join(args.outpath, "message_locations")),
-        ("user_locations",    os.path.join(args.outpath, "user_locations")),
+        ("graph",             os.path.join(args.graphpath, "graph")),
+        ("message_locations", os.path.join(args.graphpath, "message_locations")),
+        ("user_locations",    os.path.join(args.graphpath, "user_locations")),
         ("predictions",       os.path.join(args.outpath, "predictions")),
         
         ("params", OrderedDict([
