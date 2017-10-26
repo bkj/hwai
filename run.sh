@@ -24,7 +24,7 @@ OUTPATH="/user/bjohnson/projects/wai/instagram-v3/trickle/output/"
 # 
 # !! If you don't have raw JSON messages, you can skip this step
 
-$SPARK_SUBMIT ./prep.py config.json
+# $SPARK_SUBMIT ./prep.py config.json
 
 # --
 # Run "spatial label propagation"
