@@ -5,7 +5,7 @@
 '''
 
 import sys
-import ujson as json
+import json
 from pyspark import SparkContext
 
 # --
